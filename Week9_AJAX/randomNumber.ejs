@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Numbers Fact</title>
+    <link rel="stylesheet" type="text/css" href="NumbersFact.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+
+
+            $('#numbersub').click(() => {
+
+                console.log("work");
+                let numberInput = $('#number').val();
+                console.log(numberInput);
+
+                $.ajax({
+                    url: `http://numbersapi.com/${numberInput}?json`,
+                    dataType: 'json',
+                    success: function (data) {
+                        $('#numberFact').html(data.text)
+                        $('#label').html(`Interesting Facts About Numbers: ${data.number}`)
+                    },
+                    error: function () {
+                        alert("ERROR: Please Enter A Number");
+                    }
+                });
+            });
+
+            $('#numberRandom').click(() => {
+
+                $.ajax({
+                    url: `http://numbersapi.com/random?json`,
+                    dataType: 'json',
+                    success: function (data) {
+                        $('#numberFact').html(data.text)
+                        $('#label').html(`Interesting Facts About Numbers: ${data.number}`)
+                    },
+                    error: function () {
+                        alert("error");
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="mainText">
+        <h1 id="numberFact">
+            Hello!
+        </h1>
+    </div>
+    <div class="container">
+        <label for="number"><b id="label">Interesting Facts About Numbers:</b></label>
+        <br><input type="number" placeholder="Enter a number" id="number" step="1" required>
+        <br><input type="button" id="numbersub" value="Submit">
+        <input type="button" id="numberRandom" value="I'm Feeling Adventurous">
+    </div>
+</body>
+
+</html>

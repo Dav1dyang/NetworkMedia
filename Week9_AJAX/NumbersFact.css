@@ -1,0 +1,66 @@
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: rgb(190, 242, 255);
+    margin: auto;
+    padding: 20;
+    text-align: center;
+}
+
+canvas {
+  display: block;
+}
+
+input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+#numbersub {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+#numbersub:hover {
+  opacity: 0.7;
+}
+
+#numberRandom {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+  
+#numberRandom:hover {
+    opacity: 0.7;
+}
+
+.container {
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 0px solid rgb(255, 255, 255);
+    height: 180px;
+    width: 300px;
+    margin: auto;
+    padding: 20;
+}
+  
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
