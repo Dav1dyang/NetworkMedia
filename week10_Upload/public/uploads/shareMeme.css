@@ -1,0 +1,71 @@
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: rgb(189, 184, 255);
+    margin: auto;
+    padding: 20;
+    text-align: center;
+}
+
+canvas {
+  display: block;
+}
+
+input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+input[type=text]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=file] {
+  background-color: rgba(238, 230, 255, 0.575);
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=submit]{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+.container {
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 0px solid rgb(255, 255, 255);
+    height: 190px;
+    width: 300px;
+    margin: auto;
+    padding: 20;
+}
+  
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+

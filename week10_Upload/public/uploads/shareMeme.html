@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Share Meme</title>
+    <link rel="stylesheet" type="text/css" href="shareMeme.css">
+</head>
+
+<body>
+    <h1 id="numberFact">
+        Hello!
+    </h1>
+    <div class="container">
+        <form method="POST" action="/upload" enctype="multipart/form-data">
+            <label for="number"><b id="label"> Meme's Title:</b></label>
+            <input type="text" name="thetext">
+            <input type="file" name="thefile">
+            <input type="submit" name="submitbutton" value="Submit" />
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>Meme collection</title>
+</head>
+
+<body>
+    <h1>Meme collection</h1>
+
+    <% for (var i = 0; i < data.length; i++) { %>
+    <div>
+        <h2><%=data[i].text%></h2>
+        <img src="/uploads/<%=data[i].file%>">
+    </div>
+    <% } %>
+
+    <a href="/shareMeme.html">another post</a>
+
+</body>
+
+</html>
